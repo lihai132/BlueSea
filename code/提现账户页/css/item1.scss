@@ -1,0 +1,60 @@
+html,body{
+    height: 100%;
+}
+.item1{
+    height: 100%;
+    
+    background: #F5F5F5;
+    .title{
+        padding-left: .213333rem;
+        padding-right: .213333rem;
+       font-size: .24rem;
+       line-height: 0.24rem;
+       padding-top: .266667rem;
+       padding-bottom: .133333rem;
+        .name{
+            font-size: .266667rem;
+            line-height: .533333rem;
+            font-weight: 600;
+        }
+       
+    }
+    .tips{
+        color:  #E6B25E;
+        padding-bottom: .266667rem;
+        padding-left: .213333rem;
+        padding-right: .213333rem;
+    }
+    .car{
+        display: flex;
+        background: #fff;
+        align-items: center;
+        padding-left: .213333rem;
+        padding-right: .213333rem;
+        
+        .text{
+            font-size: .213333rem;
+            line-height: 1rem;
+            margin-right: .133333rem;
+        }
+        .num{
+            border: none;
+        }
+    }
+    .determine{
+        margin-top: .266667rem;
+        margin-left: .213333rem;
+        margin-right: .213333rem;
+        .but{
+            width: 100%;
+            font-size: .32rem;
+            line-height: 40px;
+            background: #80D6A9;
+            border: none;
+            color: #fff;
+        }
+        
+
+    }
+
+}

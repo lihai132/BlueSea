@@ -1,0 +1,105 @@
+html, body {
+  height: 100%;
+}
+
+.cash {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #F5F5F5;
+}
+
+.cash .top {
+  height: 2.266667rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cash .top .title {
+  font-size: .213333rem;
+  color: #B0B0B0;
+  line-height: .4rem;
+}
+
+.cash .top .num {
+  font-size: .32rem;
+  line-height: .4rem;
+  color: #FF5B42;
+  font-weight: 600;
+}
+
+.cash .center {
+  flex: 1;
+  box-sizing: border-box;
+  padding-top: .213333rem;
+}
+
+.cash .center .account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-sizing: border-box;
+  padding-left: .213333rem;
+  padding-right: .213333rem;
+}
+
+.cash .center .account .title {
+  font-size: .266667rem;
+  line-height: 1rem;
+}
+
+.cash .center .account .right {
+  display: flex;
+  align-items: center;
+}
+
+.cash .center .account .right .text {
+  font-size: .213333rem;
+  color: #BEBEBE;
+  margin-right: .133333rem;
+}
+
+.cash .center .account .right img {
+  width: .213333rem;
+  height: .213333rem;
+}
+
+.cash .center .but {
+  margin-top: .4rem;
+  box-sizing: border-box;
+  margin-left: .213333rem;
+  margin-right: .213333rem;
+  font-size: .32rem;
+  line-height: .8rem;
+  background: #0aB75B;
+  text-align: center;
+  color: #fff;
+  border-radius: .106667rem;
+}
+
+.cash .footer {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cash .footer .text1 {
+  font-size: .24rem;
+  color: #8FD4B5;
+  padding-right: .2rem;
+  line-height: .24rem;
+  border-right: 1px solid #8FD4B5;
+  height: .24rem;
+}
+
+.cash .footer .text2 {
+  font-size: .24rem;
+  color: #8FD4B5;
+  padding-left: .2rem;
+  line-height: .24rem;
+  height: .24rem;
+}

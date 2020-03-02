@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="../js/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="../css/wealth.css">
+<script src="../js/rem.js"></script>
+
+<body>
+    <div class="wealth">
+        <div class="name">财富等级</div>
+        <div class="item1">
+
+            <div class="title"><strong>什么是财富等级？</strong></div>
+            <div class="text">财富等级是用户在滴滴语音中财力的象征，等级越高，财富称号越炫酷！只要在房间中送出礼物，就能提升财富等级。</div>
+        </div>
+
+        <div class="item2">
+            <div class="title"><strong>财富等级如何提升？</strong></div>
+            <div class="text">每在房间中送出价值1000钻石的礼物，即可升1个小级。</div>
+            <div class="tips">*100钻石=1元人民币</div>
+            <ul class="form">
+                <li class="head">
+                    <div>等级图标</div>
+                    <div>财富称号</div>
+                    <div>财富总值</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="item3">
+            <div class="title"><strong>在哪里显示财富等级？</strong></div>
+            <div class="text1">除了在个人资料和房间内的卡片上有展示等级以外，还会在以下情况展示：</div>
+            <div class="text2">1.财富值达到第黄金1以上时，进房时有特效提示。</div>
+            <img src="../images/tp1.png" alt="" class="img1">
+            <div class="text3">2.魅力值财富值的标识会在房间聊天公屏直接显示，房间里所有人都可以看到你的尊贵啦～</div>
+            <img src="../images/tp2.png" alt="" class="img2">
+
+            <div class="text4">3.魅力值和财富值每次升大级，都会在房间顶部出现升级提示，房间所有人都可以看到你的特殊身份～
+            </div>
+            <img src="../images/tp3.png" alt="" class="img3">
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+
+
+        //class 构造函数
+        class Wealth {
+            constructor(list) {
+                this.data = list;
+            }
+
+            //初始化
+            init() {
+                this.create();
+
+            }
+
+            //生成标签
+            create() {
+                let data = this.data;
+                let html = data.map(item => {
+                    return `
+                    <li class="l1">
+                    <div><img src=${item.img} alt=""></div>
+                    <div>${item.title}</div>
+                    <div>${item.num}</div>
+                     </li>
+                    `
+
+                }).join("");
+
+                let form = $(".form");
+                form.append(html);
+
+
+            }
+
+        }
+
+
+        let list = [{
+            img: "../images/qt1.png",
+            title: "青铜才子",
+            num: 1000
+        }, {
+            img: "../images/qt2.png",
+            title: "白银绅士",
+            num: 10000
+        }, {
+            img: "../images/qt3.png",
+            title: "黄金城主",
+            num: 100000
+        }, {
+            img: "../images/qt4.png",
+            title: "珀金诸侯",
+            num: 1000000
+        }, {
+            img: "../images/qt5.png",
+            title: "钻石霸王",
+            num: 10000000
+        }, {
+            img: "../images/qt6.png",
+            title: "星耀帝皇",
+            num: 100000000
+        }]
+
+        //实例对象
+        let wealth = new Wealth(list);
+        wealth.init();
+
+
+    })
+</script>
+
+</html>

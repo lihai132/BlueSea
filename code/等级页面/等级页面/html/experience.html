@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="../css/experience.css">
+    <script src="../js/rem.js"></script>
+</head>
+
+<body>
+    <div class="experience">
+        <div class="name">经验等级</div>
+        <div class="item1">
+            <div class="text">经验等级是用户在平台上的成长属性，随着等级上升，等级标志会有相应的颜色变化</div>
+        </div>
+        <div class="item2">
+            <div class="title"><strong>等级颜色和级别对应：</strong>
+            </div>
+            <ul class="list1">
+
+            </ul>
+
+        </div>
+        <div class="item3">
+            <div class="left">
+                <div class="l1">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx1.png" alt="">
+                        </div>
+                        <div class="d2">Lv.10</div>
+                    </div>
+                    <div class="le2">Lv.1-10</div>
+                </div>
+                <div class="l2">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx2.png" alt="">
+                        </div>
+                        <div class="d2">Lv.20</div>
+                    </div>
+                    <div class="le2">Lv.11-20</div>
+                </div>
+                <div class="l3">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx3.png" alt="">
+                        </div>
+                        <div class="d2">Lv.30</div>
+                    </div>
+                    <div class="le2">Lv.21-30</div>
+                </div>
+                <div class="l4">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx4.png" alt="">
+                        </div>
+                        <div class="d2">Lv.40</div>
+                    </div>
+                    <div class="le2">Lv.31-40</div>
+                </div>
+                <div class="l5">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx4.png" alt="">
+                        </div>
+                        <div class="d2">Lv.50</div>
+                    </div>
+                    <div class="le2">Lv.41-50</div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="l6">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx6.png" alt="">
+                        </div>
+                        <div class="d2">Lv.60</div>
+                    </div>
+                    <div class="le2">Lv.51-60</div>
+                </div>
+                <div class="l7">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx7.png" alt="">
+                        </div>
+                        <div class="d2">Lv.70</div>
+                    </div>
+                    <div class="le2">Lv.61-70</div>
+                </div>
+                <div class="l8">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx8.png" alt="">
+                        </div>
+                        <div class="d2">Lv.80</div>
+                    </div>
+                    <div class="le2">Lv.71-80</div>
+                </div>
+                <div class="l9">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx9.png" alt="">
+                        </div>
+                        <div class="d2">Lv.90</div>
+                    </div>
+                    <div class="le2">Lv.81-90</div>
+                </div>
+                <div class="l10">
+                    <div class="le1">
+                        <div class="d1">
+                            <img src="../images/xx10.png" alt="">
+                        </div>
+                        <div class="d2">Lv.100</div>
+                    </div>
+                    <div class="le2">Lv.91-100</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item4">
+            <div class="title"><strong>如何提升等级？</strong>
+            </div>
+            <ul class="list2">
+
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    $(function () {
+
+
+        //class 构造函数
+        class Experience {
+            constructor(list1, list2) {
+                this.data1 = list1;
+                this.data2 = list2;
+            }
+
+            //初始化
+            init() {
+                this.create();
+
+            }
+
+            //生成标签
+            create() {
+                let data1 = this.data1;
+                let html1 = data1.map(item => {
+                    return `
+                    <li class="l1">${item}</li>
+                    `
+
+                }).join("");
+
+                let list1 = $(".list1");
+                list1.append(html1);
+
+                let data2 = this.data2;
+                let html2 = data2.map(ele => {
+                    return `
+                    <li class="l1">${ele}</li>
+                    `
+
+                }).join("");
+
+                let list2 = $(".list2");
+                list2.append(html2);
+
+
+            }
+
+        }
+
+
+        let list1 = ["灰色 Lv.1-10", "淡绿 Lv.11-20", "淡蓝 Lv.21-30", "淡紫 Lv.31-40", "淡橙 Lv.41-50", "橙色 Lv.51-60",
+            "深橙 Lv.61-70", "粉红 Lv.71-80", "紫红 Lv.81-90", "深紫红 Lv.91-100"
+        ];
+        let list2 = ["累积在线3分钟 经验+10", "累积在线10分钟 经验+10", "累积在线30分钟 经验+30", "累积在线60分钟 经验+100", "每日最高增加150经验。"];
+
+
+        //实例对象
+        let experience = new Experience(list1, list2);
+        experience.init();
+
+
+    })
+</script>
+
+</html>
