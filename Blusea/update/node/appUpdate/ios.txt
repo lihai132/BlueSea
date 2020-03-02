@@ -1,0 +1,1 @@
+1.0.0,1.0.5,http://ddapp2-test.blueseashark.cn/manager/app/ios/updateModel.ipa,1.优化各种体验##2.完善相关功能

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="../js/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="../css/charm.css">
+<script src="../js/rem.js"></script>
+
+<body>
+    <div class="charm">
+        <div class="name">魅力等级
+        </div>
+        <div class="item1">
+            <div class="title"><strong>什么是魅力等级？</strong></div>
+            <div class="text">魅力等级是用户在滴滴语音中魅力的象征，等级越高，魅力称号越厉害！只要在房间中收到礼物，就能提升魅力等级。</div>
+        </div>
+
+        <div class="item2">
+            <div class="title"><strong>魅力等级如何提升？</strong></div>
+            <div class="text">每在房间中收到价值1000钻石的礼物，即可升1个小级。</div>
+            <div class="tips">*100钻石=1元人民币</div>
+            <ul class="form">
+                <li class="head">
+                    <div>等级图标</div>
+                    <div>魅力称号</div>
+                    <div>魅力总值</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="item3">
+            <div class="title"><strong>在哪里展示？</strong></div>
+            <div class="text1">除了在个人资料和房间内的卡片上有展示等级以外，还会在以下情况展示：</div>
+            <div class="text2">1.魅力值财富值的标识会在房间聊天公屏直接显示，房间里所有人都可以看到你的尊贵啦～</div>
+            <img src="../images/tp2.png" alt="" class="img1">
+            
+            
+            <div class="text4">2.魅力值和财富值每次升大级，都会在房间顶部出现升级提示，房间所有人都可以看到你的特殊身份～
+            </div>
+            <img src="../images/tp3.png" alt="" class="img3">
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+
+
+        //class 构造函数
+        class Wealth {
+            constructor(list) {
+                this.data = list;
+            }
+
+            //初始化
+            init() {
+                this.create();
+
+            }
+
+            //生成标签
+            create() {
+                let data = this.data;
+                let html = data.map(item => {
+                    return `
+                    <li class="l1">
+                    <div><img src=${item.img} alt=""></div>
+                    <div>${item.title}</div>
+                    <div>${item.num}</div>
+                     </li>
+                    `
+
+                }).join("");
+
+                let form = $(".form");
+                form.append(html);
+
+
+            }
+
+        }
+
+
+        let list = [{
+            img: "../images/charm1.png",
+            title: "见习网红",
+            num: 1000
+        }, {
+            img: "../images/charm2.png",
+            title: "名气小成",
+            num: 10000
+        }, {
+            img: "../images/charm3.png",
+            title: "当红艺人",
+            num: 100000
+        }, {
+            img: "../images/charm4.png",
+            title: "魅力四射",
+            num: 1000000
+        }, {
+            img: "../images/charm5.png",
+            title: "闪耀之星",
+            num: 10000000
+        }, {
+            img: "../images/charm6.png",
+            title: "人气偶像",
+            num: 100000000
+        }]
+
+        //实例对象
+        let wealth = new Wealth(list);
+        wealth.init();
+
+
+    })
+</script>
+
+</html>

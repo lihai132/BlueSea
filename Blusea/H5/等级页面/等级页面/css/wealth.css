@@ -1,0 +1,142 @@
+.wealth {
+  padding-left: .213333rem;
+  padding-right: .213333rem;
+}
+
+.wealth .name {
+  font-size: .293333rem;
+  line-height: .746667rem;
+}
+
+.wealth .item1 {
+  padding-bottom: .4rem;
+}
+
+.wealth .item1 .title {
+  font-size: .293333rem;
+  line-height: .266667rem;
+  font-weight: 700;
+  padding-bottom: .066667rem;
+}
+
+.wealth .item1 .text {
+  font-size: .293333rem;
+}
+
+.wealth .item2 {
+  padding-bottom: .266667rem;
+}
+
+.wealth .item2 .title {
+  font-size: .293333rem;
+  line-height: .266667rem;
+  font-weight: 700;
+  padding-bottom: .066667rem;
+}
+
+.wealth .item2 .text {
+  font-size: .293333rem;
+}
+
+.wealth .item2 .tips {
+  font-size: .293333rem;
+  color: #A9A9A9;
+  padding-bottom: .266667rem;
+}
+
+.wealth .item2 .form .head {
+  display: flex;
+  width: 80%;
+  border: 1px solid #000;
+}
+
+.wealth .item2 .form .head div {
+  width: 33%;
+  font-size: .293333rem;
+  line-height: .8rem;
+  text-align: center;
+}
+
+.wealth .item2 .form .head div:nth-child(1) {
+  border-right: 1px solid #000;
+}
+
+.wealth .item2 .form .head div:nth-child(2) {
+  border-right: 1px solid #000;
+}
+
+.wealth .item2 .form .l1 {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.wealth .item2 .form .l1 div {
+  width: 33%;
+  font-size: .293333rem;
+  line-height: .8rem;
+  text-align: center;
+}
+
+.wealth .item2 .form .l1 div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wealth .item2 .form .l1 div:nth-child(1) img {
+  width: 1.786667rem;
+  height: .586667rem;
+}
+
+.wealth .item2 .form .l1 div:nth-child(2) {
+  border-left: 1px solid #000;
+}
+
+.wealth .item2 .form .l1 div:nth-child(3) {
+  border-left: 1px solid #000;
+}
+
+.wealth .item2 .form .l1:nth-child(2) {
+  border-bottom: 1px solid #000;
+}
+
+.wealth .item2 .form .l1:nth-child(3) {
+  border-bottom: 1px solid #000;
+}
+
+.wealth .item2 .form .l1:nth-child(4) {
+  border-bottom: 1px solid #000;
+}
+
+.wealth .item2 .form .l1:nth-child(5) {
+  border-bottom: 1px solid #000;
+}
+
+.wealth .item2 .form .l1:nth-child(6) {
+  border-bottom: 1px solid #000;
+}
+
+.wealth .item2 .form .l1:nth-child(7) {
+  border-bottom: 1px solid #000;
+}
+
+.wealth .item3 .title {
+  font-size: .293333rem;
+  line-height: .293333rem;
+  font-weight: 700;
+  padding-bottom: .066667rem;
+}
+
+.wealth .item3 .text1, .wealth .item3 .text2, .wealth .item3 .text3, .wealth .item3 .text4 {
+  padding-bottom: .066667rem;
+  font-size: .293333rem;
+}
+
+.wealth .item3 .img1, .wealth .item3 .img2, .wealth .item3 .img3 {
+  width: 60%;
+  height: 60%;
+  padding-bottom: .4rem;
+}

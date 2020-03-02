@@ -1,0 +1,72 @@
+.integral {
+  padding-left: .213333rem;
+  padding-right: .213333rem;
+}
+
+.integral .item1 {
+  padding-bottom: .4rem;
+  padding-top: 0.4rem;
+}
+
+.integral .item1 .title {
+  font-size: .293333rem;
+  line-height: .266667rem;
+  font-weight: 600;
+  padding-bottom: .133333rem;
+}
+
+.integral .item1 .text {
+  font-size: .293333rem;
+}
+
+.integral .item2 {
+  padding-bottom: .266667rem;
+}
+
+.integral .item2 .title {
+  font-size: .293333rem;
+  line-height: .266667rem;
+  font-weight: 600;
+  padding-bottom: .133333rem;
+}
+
+.integral .item2 .text {
+  font-size: .293333rem;
+  padding-bottom: .106667rem;
+}
+
+.integral .item3 {
+  padding-bottom: .4rem;
+}
+
+.integral .item3 .title {
+  font-size: .293333rem;
+  line-height: .293333rem;
+  font-weight: 600;
+  padding-bottom: .133333rem;
+}
+
+.integral .item3 .text1, .integral .item3 .text2, .integral .item3 .text4 {
+  padding-bottom: .106667rem;
+  font-size: .293333rem;
+}
+
+.integral .item4 {
+  padding-bottom: .4rem;
+}
+
+.integral .item4 .title {
+  font-size: .293333rem;
+  line-height: .266667rem;
+  font-weight: 600;
+  padding-bottom: .133333rem;
+}
+
+.integral .item4 .text1, .integral .item4 .text2, .integral .item4 .text3, .integral .item4 .text4, .integral .item4 .text5, .integral .item4 .text6 {
+  font-size: .293333rem;
+  padding-bottom: .106667rem;
+}
+
+.integral .item5 {
+  font-size: .293333rem;
+}

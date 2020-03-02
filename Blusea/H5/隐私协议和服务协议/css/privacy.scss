@@ -1,0 +1,21 @@
+.privacy{
+    .item1 {
+      padding: .213333rem .213333rem .266667rem .213333rem;
+        .title {
+          font-size:.293333rem;
+          line-height:.533333rem;
+        }
+    }
+    .item2,.item3,.item4,.item5,.item6 {
+        padding: .213333rem .213333rem 0 .213333rem;
+        .title {
+          font-size:.293333rem;
+          line-height:.533333rem;
+        }
+        .text {
+          font-size: .24rem;
+          line-height: .5rem;
+          margin-top: 0.2rem;
+        }
+      }
+}

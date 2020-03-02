@@ -1,0 +1,1 @@
+1.0.0,1.0.0,http://ddapp2-test.blueseashark.cn/manager/app/android/updateModel.apk,1.优化各种体验##2.完善相关功能##3.应用升级优化
